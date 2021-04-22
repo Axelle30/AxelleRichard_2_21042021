@@ -1,0 +1,38 @@
+/* Définition de la police */
+
+@font-face{
+    font-family: "raleway";
+    src: url("font/Raleway-Regular.ttf") format("truetype");
+}
+
+* {
+    font-family: "raleway", Arial;
+}
+
+/* Mise en page générale */
+
+:link {
+    text-decoration:none;
+}
+/* Mise en page index.html */
+
+/* Mise en page construction.html */
+#construction {
+
+    background-color: #F2F2F2;
+    width: 50%;
+    margin: 10% 40% 25% 25%;
+    
+    text-align: center;
+    border: 5px #DEEBFF solid;
+    border-radius: 15px; 
+}
+#constlink{
+    color: #0000;
+}
+#constLink:hover {
+    color: #0065FC;
+}
+#constLink:active{
+    text-decoration: italic;
+}
