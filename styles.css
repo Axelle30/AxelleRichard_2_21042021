@@ -10,11 +10,163 @@
 }
 
 /* Mise en page générale */
+.photo{
+    display:block;
+    max-width: 100%;
+    max-height: 48%;
+    border-radius: 30px;
+
+}
 
 :link {
     text-decoration:none;
 }
+a:visited {
+color: #0000;
+}
+* {
+    list-style-type: none;
+}
+h1{
+    font-size: x-large;
+    font-weight: bolder;
+}
 /* Mise en page index.html */
+
+/*HEADER*/
+
+#logoNav {
+    display: flex;
+    justify-content: space-between;
+}
+nav {
+    display: flex;
+
+}
+.navElement {
+    color: #0000;
+    margin-left: 30px;
+    margin-right: 35px;
+    padding: 12;
+}
+nav a:hover {
+    color:#0065FC;
+    border-top: 3px solid #0065FC ;
+    padding: 22px 0 0 0; 
+}
+#filter {
+    display: flex;
+    flex-direction: row;
+}
+#filterTitle{
+    margin: 30px 0 0 0;
+    padding: 0 0 20px 0;
+}
+.filterElement {
+    margin-left: 15px;
+    font-weight: bolder;
+    border: 2px solid #F2F2F2;
+    padding: 10px 8px 15px 15px;
+    border-radius: 30px;
+    justify-content: center;
+
+}
+.filterElement:hover{
+    background-color: #0065FC;
+    color:#F2F2F2;
+    font-weight: bolder;
+    cursor:pointer;
+}
+#info {
+    display: flex;
+    flex-direction: row;
+    margin: 0 0 30px 0;
+     
+}
+#infobulle {
+    color: #0065FC;
+    font-weight: bolder;
+    font-family:serif;
+    border: 3px solid #F2F2F2;
+    border-radius: 100px;
+    padding: 2px 2px 2px 2px;
+    justify-content: center;
+    
+}
+h4 #info {
+    margin: 10px 0 0 0;
+}
+
+/*MARSEILLE*/
+
+#mainSection{
+    display:flex;
+    flex-direction: row;
+}
+#marseille{
+    background-color: #F2F2F2;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    max-width:880px;
+}
+#firstLine{
+    display:flex;
+    flex-direction: row;
+}
+#secondLine{
+    display:flex;
+    flex-direction: row;
+}
+#affplus:hover{
+    cursor:pointer;
+    color:#0065FC;
+}
+.locationMarseille {
+    background-color: #FFFF;
+    width: 250px;
+    height: 250px;
+    display:block;
+    border-radius: 30px;
+    padding: 5px 5px 5px 5px;
+    margin: 30px 30px 30px 30px
+}
+#populaire{
+    background-color: #F2F2F2;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    max-width: 421px;
+    margin: 0 0 40px 0;
+}
+.locationPopulaire{
+    display: flex;
+    background-color: #FFFF;
+    border-radius: 30px;
+    height: 150px;
+    width: 350px;
+    margin: 10px 10px 0 0;
+}
+.nomHebergement{
+    font-weight: bolder;
+}
+
+/*FOOTER*/
+footer {
+   background-color: #F2F2F2;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+}
+.footerLink{
+    display: flex;
+    flex-direction: column;
+
+}
+footer a:hover{
+    color:#0065FC;
+}
+
 
 /* Mise en page construction.html */
 #construction {

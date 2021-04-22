@@ -4,7 +4,7 @@
         <meta charset="utf-8" />
         <title>Reservia - Trouvez votre hébérgement pour des vacances de rêves</title>
         <link rel="stylesheet" href="styles.css" />
-        <link rel="favicon" type="image/ico" href="ressources/images/logo/reservia.ico" />
+        <link rel="favicon" type="image/ico" src="ressources/images/logo/reservia.ico" />
 
     </head>
     <body>
@@ -12,11 +12,9 @@
             <div id="logoNav">
                 <p id="logo"><img src="images/logo/reservia.svg" alt="Reservia"/></p>
                 <nav>
-                    <ul>
-                        <li><a href="#mainSection">Hébérgements</a></li>
-                        <li><a href="#lowerSection">Activités</a></li>
-                        <li><a href="construction.html">S'inscrire</a></li>
-                    </ul>
+                    <p class="navElement"><a href="#mainSection">Hébérgement</a></p>
+                    <p class="navElement"><a href="#lowerSection">  Activités</a></p>
+                    <p class="navElement"><a href="construction.html">  S'inscrire</a></p>
                 </nav>
             </div>
             <h1>Trouvez votre hébérgement pour des vacances de rêves</h1>
@@ -25,13 +23,15 @@
 
             </div>
             <div id="filter">
-                <h3>Filtres</h3>
-                <ul>
-                    <li>Économique</li>
-                    <li>Familial</li>
-                    <li>Romantique</li>
-                    <li>Animaux autorisés</li>
-                </ul>
+                <h3 id="filterTitle">Filtres</h3>
+                <p class="filterElement"><img src="" class="filterPicture" />Économique</p>
+                <p class="filterElement"><img src="" class="filterPicture" />Familial</p>
+                <p class="filterElement"><img src="" class="filterPicture" />Romantique</p>
+                <p class="filterElement"><img src="" class="filterPicture" />Animaux autorisés</p>
+            </div>
+            <div id="info">
+                <p id="infobulle">i</p>
+                <h4>Plus de 500 logements sont disponibles dans cette ville</h4>
             </div>
         </header>
 
@@ -39,37 +39,59 @@
             <section id="marseille">
                 <h2>Hébérgements à Marseille</h2>
                 <div id="locationList">
-                    <article class="locationMarseille" id="cannebiere">
-
-                    </article>
-                    <article class="locationMarseille" id="port">
-
-                    </article>
-                    <article class="locationMarseille" id="mouettes">
-
-                    </article>
-                    <article class="locationMarseille" id="mer">
-
-                    </article>
-                    <article class="locationMarseille" id="panier">
-
-                    </article>
-                    <article class="locationMarseille" id="amina">
-
-                    </article>
+                    <div id=firstLine>
+                        <div class="locationMarseille" id="cannebiere">
+                            <div><img class="photo" src="images/hebergements/4_small/auberge_de_la_cannebiere.jpg"/></div>
+                            <p class="nomHebergement"><a href="construction.html">Auberge de la Cannebière</a></p>
+                            <p class="prixHebergement">Nuit à partir de 25€</p>
+                        </div>
+                        <article class="locationMarseille" id="port">
+                            <div><img class="photo" src="images/hebergements/4_small/hotel_du_port.jpg"/></div>
+                            <p class="nomHebergement"><a href="construction.html">Hôtel du Port</a></p>
+                            <p class="prixHebergement">Nuit à partir de 52€</p>
+                        </article>
+                        <article class="locationMarseille" id="mouettes">
+                            <div><img class="photo" src="images/hebergements/4_small/hotel_les_mouettes.jpg"/></div>
+                            <p class="nomHebergement"><a href="construction.html">Hôtel Les mouettes</a></p>
+                            <p class="prixHebergement">Nuit à partir de 76€</p>
+                        </article>
+                    </div>
+                    <div id="secondLine">
+                        <article class="locationMarseille" id="mer">
+                            <div><img class="photo" src="images/hebergements/4_small/hotel_de_la_mer.jpg"/></div>
+                            <p class="nomHebergement"><a href="construction.html">Hôtel de la mer</a></p>
+                            <p class="prixHebergement">Nuit à partir de 46€</p>
+                        </article>
+                        <article class="locationMarseille" id="panier">
+                            <div><img class="photo" src="images/hebergements/4_small/auberge_le_panier.jpg"/></div>
+                            <p class="nomHebergement"><a href="construction.html">Auberge Le Panier</a></p>
+                            <p class="prixHebergement">Nuit à partir de 23€</p>
+                        </article>
+                        <article class="locationMarseille" id="amina">
+                            <div><img class="photo" src="images/hebergements/4_small/hotel_chez_amina.jpg"/></div>
+                            <p class="nomHebergement"><a href="construction.html">Hôtel chez Amina</a></p>
+                            <p class="prixHebergement">Nuit à partir de 96€</p>
+                        </article>
                 </div>
-                <h3>Afficher plus</h3>
+                </div>
+                <h3 id="affplus">Afficher plus</h3>
             </section>
             <section id="populaire">
                 <h2>Les plus populaires</h2>
                 <article class="locationPopulaire" id="matin">
-
+                    <div><img class="photo" src="images/hebergements/4_small/hotel_le_soleil_du_matin.jpg"/></div>
+                    <p class="nomHebergement"><a href="construction.html">Hôtel Le soleil du matin</a></p>
+                    <p class="prixHebergement">Nuit à partir de 128€</p>
                 </article>
                 <article class="locationPopulaire" id="coeur">
-
+                    <div><img class="photo" src="images/hebergements/4_small/au_coeur_de_l_eau_chambres_d_hotes.jpg"/></div>
+                    <p class="nomHebergement"><a href="construction.html">Au cœur de l'eau Chambres d'hôtes</a></p>
+                    <p class="prixHebergement">Nuit à partir de 71€</p>
                 </article>
                 <article class="locationPopulaire" id="bleuBlanc">
-
+                    <div><img class="photo" src="images/hebergements/4_small/hotel_tout_bleu_et_blanc.jpg"/></div>
+                    <p class="nomHebergement"><a href="construction.html">Hôtel Tout bleu et Blanc</a></p>
+                    <p class="prixHebergement">Nuit à partir de 96€</p>
                 </article>
             </section>
         </section>
