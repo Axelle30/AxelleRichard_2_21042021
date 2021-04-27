@@ -20,21 +20,39 @@ color: #0000;
 * {
     list-style-type: none;
 }
-h1{
+h1 {
     font-size: x-large;
     font-weight: bolder;
+}
+.blueStar {
+    color: #0065FC;
+}
+.whiteStar {
+    color: #DEEBFF;
+}
+em {
+    font-weight: bold;
 }
 
 /* Mise en page index.html */
 
 /*HEADER*/
 
+#mainSubTitle {
+    font-size: 15px;
+    margin-top: -5px;
+    font-weight: lighter;
+}
+#mainTitle {
+    font-weight: bolder;
+    font-size: 20px;
+}
 #logoNav {
     display: flex;
-    justify-content: space-between;
 }
 nav {
     display: flex;
+    margin-left: 650px;
 
 }
 .navElement {
@@ -61,13 +79,17 @@ nav a:hover {
     display: flex;
     justify-content: left;
 }
-#searchLogo {
+#searchLogoCircle {
     border: 2px solid #F2F2F2;
     background-color: #F2F2F2;
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
     width: 50px;
-    height: 50px;
+    height: 52px;
+}
+#searchLogoPointer {
+    font-size: 30px;
+    padding: 7px 0 0 17px;
 }
 #searchInput{
     border: 2px solid #F2F2F2;
@@ -75,7 +97,7 @@ nav a:hover {
     height: 50px;
     width: 230px;
     font-size: 20px ;
-    margin-right: 0px;
+    margin-right: 0;
 }
 #searchSubmit {
     border: 2px solid #0065FC;
@@ -85,9 +107,10 @@ nav a:hover {
     font-weight: bolder;
     border-bottom-right-radius: 30px ;
     border-top-right-radius: 30px;
-    height: 55px;
+    height: 56px;
     width: 135px;
-    margin-right: 30px;
+    margin-left: -4px;
+    padding: 4px 15px 0 0;
     
 }
 #searchSubmit:hover {
@@ -98,10 +121,11 @@ nav a:hover {
 #filter {
     display: flex;
     flex-direction: row;
+    margin: 30px 0 20px 0;
 }
 #filterTitle{
     margin: 30px 0 0 0;
-    padding: 0 0 20px 0;
+    padding: 0 0 0 0;
 }
 .filterBlock {
     display: flex;
@@ -109,24 +133,32 @@ nav a:hover {
     margin-left: 15px;
     font-weight: bolder;
     border: 2px solid #F2F2F2;
-    width: 200px;
+    width: auto;
     height: 50px;
     border-radius: 30px;
     justify-content: left;
+    margin-top: 15px
 }
 .filterElement {
-    margin-right: 5px;
-}
-.tempFilterLogo{
-    border: 3px solid #F2F2F2;
-    background-color: #F2F2F2;
-    border-radius: 100px;
-    padding: 2px 2px 2px 2px;
-    justify-content: center;
     margin-right: 10px;
-    margin-bottom: 20px;
-    width: 50px;
+    margin-left: 15px;
+}
+.filterCircle {
+    background-color: #DEEBFF;
+    color: #0065FC;
+    border-radius: 30px;
+    border: 2px solid #DEEBFF;
     height: 50px;
+    width: 50px;
+    max-height: 50px;
+    max-width: 50px;
+    margin: -2px 0 0 -2px;
+}
+.filterLogo {
+    vertical-align: center;
+    text-align: center;
+    margin-top: 8px;
+    font-size: 30px;
 }
 .filterBlock:hover{
     background-color: #0065FC;
@@ -145,21 +177,29 @@ nav a:hover {
     color: #0065FC;
     font-weight: bolder;
     font-family:serif;
+    font-size: 15px;
     border: 3px solid #F2F2F2;
     border-radius: 100px;
     padding: 2px 2px 2px 2px;
-    justify-content: center;
+    width:20px;
+    height: 20px;
+    text-align: center;
+    margin: 15px 5px 0 0;
     
 }
-h4 #info {
-    margin: 10px 0 0 0;
+#info h4 {
+    font-weight: lighter;
 }
 
-/*MARSEILLE*/
+/*MAINSECTION*/
 
 #mainSection{
     display:flex;
     flex-direction: row;
+}
+section h2 {
+    font-weight: bolder;
+    margin-left: 15px;
 }
 #marseille{
     background-color: #F2F2F2;
@@ -167,6 +207,8 @@ h4 #info {
     display: flex;
     flex-direction: column;
     max-width:880px;
+    max-height: 630px;
+    margin-right: 40px;
 }
 #firstLine{
     display:flex;
@@ -176,55 +218,102 @@ h4 #info {
     display:flex;
     flex-direction: row;
 }
-#affplus:hover{
+#affplus {
+    margin-left: 15px
+}
+#affplus:hover {
     cursor:pointer;
     color:#0065FC;
 }
 .locationMarseille {
     background-color: #FFFF;
     width: 250px;
-    height: 250px;
-    display:block;
+    height: auto;
+    max-height: 250px;
     border-radius: 30px;
     padding: 5px 5px 5px 5px;
-    margin: 30px 30px 30px 30px
+    margin: 30px 30px 30px 30px;
+    box-shadow: 7px 10px 13px 4px #DEEBFF;
+}
+.nomHebergement,.prixHebergement,.notationHebergement {
+    margin-left: 7px;
+    margin-top: 6px;
+}
+#secondLine {
+    max-height: 250px;
 }
 .photoMarseille{    
-    max-width: 100%;
-    max-height: 48%;
+    max-width: 98%;
+    width: 100%;
+    max-height: 115px;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
+    padding-left: 3px;
+    object-fit: cover;
 }
 #populaire{
     background-color: #F2F2F2;
     border-radius: 30px;
     display: flex;
     flex-direction: column;
-    max-width: 421px;
-    margin: 0 0 40px 0;
+    max-width: 400px;
+    width: 400px;
+    max-height: 630px;
+    margin: 0 0 0 4px;
+    padding: 0 0 0 8px;
+}
+#populaireTitle {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#populaireLogo {
+    font-size: 25px;
+    font-weight: bolder;
+    padding: 25px 15px 0 0;
 }
 .locationPopulaire{
     display: flex;
     background-color: #FFFF;
     border-radius: 30px;
-    height: 150px;
-    width: 350px;
-    margin: 10px 10px 0 0;
+    max-width: 350px;
+    max-height: 130px;
+    height: 100%;
+    width: 100%;
+    margin: 0 0 40px 20px;
+    box-shadow: 7px 10px 13px 4px #DEEBFF;
 }
 .photoPopulaire {
-    max-width: 40%;
-    max-height: 100%;
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
+    object-fit: cover;
+    width: 140px;
+    height: 126px;
 }
-.descriptionLocation {
-    display: flex;
-    flex-direction: column;
+.descriptionLocationPopulaire {
+    margin-top: 15px;
 }
-.nomHebergement{
+.nomHebergement {
     font-weight: bolder;
+    font-size: 13px;
+    margin-top: -4px;
 }
+.prixHebergement {
+    font-size: 10px;
+    margin-top: -20px;
+}
+.notationHebergement {
+    display: flex;
+    flex-direction: row;
+    font-size: 12px;
+    margin-bottom: 5px
+}
+#notationPanier {
+    margin-top: -13px;
+}
+
 /*LOWER SECTION*/
+
 #lowerSection {
     padding-top:70px;
 }
@@ -240,32 +329,42 @@ h4 #info {
     display: flex;
     flex-direction: column;
 }
-.bigActivites {
+.bigActivite {
     border-radius: 30px;
-    width: 300px ;
-    height: 450px ;
-    border: 2px solid #F2F2F2;
+    max-width: 300px;
+    max-height: 600px;
+    width: auto;
+    height: auto;
+    margin-right: 42px;
+    box-shadow: 7px 10px 13px 4px #DEEBFF;
 }
-.littleActivites {
-    border-radius: 30px;
-    width: 300px;
-    height: 160px;
-    border: 1px solid #F2F2F2;
-}
-.bigActivitePhoto{
-    max-width: 100%;
-    max-height: 85%;
+.bigActivitePhoto {
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
+    height: 450px;
+    width: 300px;
+    object-fit: cover;
+}
+.littleActivite {
+    border-radius: 30px;
+    max-width: 300px;
+    max-height: 160px;
+    margin: 0 40px 130px 0;
+    box-shadow: 7px 10px 13px 4px #DEEBFF;
 }
 .littleActivitePhoto {
-    max-width: 100%;
-    max-height: 70%;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
+    height: 120px;
+    width: 300px;
+    object-fit: cover;
+
 }
 .nomActivite {
     font-weight: bold;
+    font-size: 15px;
+    margin-top: -1px;
+    margin-left: 5px
 }
 
 /*FOOTER*/
@@ -273,12 +372,21 @@ footer {
    background-color: #F2F2F2;
    display: flex;
    flex-direction: row;
-   justify-content: space-between;
 }
-.footerLink{
+.footerLinkGroup{
     display: flex;
     flex-direction: column;
+    margin-right: 220px;
 
+}
+.footerLink {
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+footer h3 {
+    margin: 50px 0 25px 40px ;
+    font-size: 20px;
+    font-weight: bolder;
 }
 footer a:hover{
     color:#0065FC;
