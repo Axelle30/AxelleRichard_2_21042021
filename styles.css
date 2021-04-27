@@ -11,6 +11,9 @@
 
 /* Mise en page générale */
 
+html {
+    font-size: 11px;
+}
 :link {
     text-decoration:none;
 }
@@ -21,7 +24,7 @@ color: #0000;
     list-style-type: none;
 }
 h1 {
-    font-size: x-large;
+    font-size: 4em;
     font-weight: bolder;
 }
 .blueStar {
@@ -39,16 +42,17 @@ em {
 /*HEADER*/
 
 #mainSubTitle {
-    font-size: 15px;
+    font-size: 1.5rem;
     margin-top: -5px;
     font-weight: lighter;
 }
 #mainTitle {
     font-weight: bolder;
-    font-size: 20px;
+    font-size: 2rem;
 }
 #logoNav {
     display: flex;
+    justify-content: space-between;
 }
 nav {
     display: flex;
@@ -57,6 +61,7 @@ nav {
 }
 .navElement {
     color: #0000;
+    font-size: 2rem;
     margin-left: 30px;
     margin-right: 35px;
     padding: 12;
@@ -88,7 +93,7 @@ nav a:hover {
     height: 52px;
 }
 #searchLogoPointer {
-    font-size: 30px;
+    font-size: 3rem;
     padding: 7px 0 0 17px;
 }
 #searchInput{
@@ -99,11 +104,11 @@ nav a:hover {
     font-size: 20px ;
     margin-right: 0;
 }
-#searchSubmit {
+#searchSubmitText {
     border: 2px solid #0065FC;
     background-color: #0065FC;
     color:#FFFF;
-    font-size: 15px;
+    font-size: 1.5rem;
     font-weight: bolder;
     border-bottom-right-radius: 30px ;
     border-top-right-radius: 30px;
@@ -113,7 +118,7 @@ nav a:hover {
     padding: 4px 15px 0 0;
     
 }
-#searchSubmit:hover {
+#searchSubmitText:hover {
     cursor: pointer;
     background-color: #FFFF;
     color:#0065FC;
@@ -134,7 +139,8 @@ nav a:hover {
     font-weight: bolder;
     border: 2px solid #F2F2F2;
     width: auto;
-    height: 50px;
+    max-width: 20%;
+    height: 2%;
     border-radius: 30px;
     justify-content: left;
     margin-top: 15px
@@ -142,6 +148,7 @@ nav a:hover {
 .filterElement {
     margin-right: 10px;
     margin-left: 15px;
+    font-size: 1.4rem;
 }
 .filterCircle {
     background-color: #DEEBFF;
@@ -158,7 +165,7 @@ nav a:hover {
     vertical-align: center;
     text-align: center;
     margin-top: 8px;
-    font-size: 30px;
+    font-size: 3rem;
 }
 .filterBlock:hover{
     background-color: #0065FC;
@@ -177,7 +184,7 @@ nav a:hover {
     color: #0065FC;
     font-weight: bolder;
     font-family:serif;
-    font-size: 15px;
+    font-size: 1.5rem;
     border: 3px solid #F2F2F2;
     border-radius: 100px;
     padding: 2px 2px 2px 2px;
@@ -189,6 +196,7 @@ nav a:hover {
 }
 #info h4 {
     font-weight: lighter;
+    font-size: 1.5rem;
 }
 
 /*MAINSECTION*/
@@ -199,6 +207,7 @@ nav a:hover {
 }
 section h2 {
     font-weight: bolder;
+    font-size: 1.8rem;
     margin-left: 15px;
 }
 #marseille{
@@ -206,9 +215,9 @@ section h2 {
     border-radius: 30px;
     display: flex;
     flex-direction: column;
-    max-width:880px;
-    max-height: 630px;
-    margin-right: 40px;
+    max-width:60%;
+    max-height: 33%;
+    margin-right: 13%;
 }
 #firstLine{
     display:flex;
@@ -227,9 +236,10 @@ section h2 {
 }
 .locationMarseille {
     background-color: #FFFF;
-    width: 250px;
+    width: auto;
+    max-width: 25%;
     height: auto;
-    max-height: 250px;
+    max-height: 17%;
     border-radius: 30px;
     padding: 5px 5px 5px 5px;
     margin: 30px 30px 30px 30px;
@@ -256,9 +266,8 @@ section h2 {
     border-radius: 30px;
     display: flex;
     flex-direction: column;
-    max-width: 400px;
-    width: 400px;
-    max-height: 630px;
+    width: 27%;
+    max-height: 35%;
     margin: 0 0 0 4px;
     padding: 0 0 0 8px;
 }
@@ -268,38 +277,41 @@ section h2 {
     justify-content: space-between;
 }
 #populaireLogo {
-    font-size: 25px;
+    font-size: 2.5rem;
     font-weight: bolder;
-    padding: 25px 15px 0 0;
+    padding: 2% 5% 0 0;
 }
 .locationPopulaire{
     display: flex;
     background-color: #FFFF;
     border-radius: 30px;
-    max-width: 350px;
-    max-height: 130px;
-    height: 100%;
-    width: 100%;
-    margin: 0 0 40px 20px;
+    max-width: 90%;
+    max-height: 40%;
+    height: 40%;
+    width: auto;
+    margin: 0 0 15% 5%;
     box-shadow: 7px 10px 13px 4px #DEEBFF;
 }
 .photoPopulaire {
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
     object-fit: cover;
-    width: 140px;
-    height: 126px;
+    width: 100%;
+    height: 98%;
+    max-width: 140px;
+    max-height: 126px;
+    margin-bottom: -2%;
 }
 .descriptionLocationPopulaire {
     margin-top: 15px;
 }
 .nomHebergement {
     font-weight: bolder;
-    font-size: 13px;
+    font-size: 1.3rem;
     margin-top: -4px;
 }
 .prixHebergement {
-    font-size: 10px;
+    font-size: 1rem;
     margin-top: -20px;
 }
 .notationHebergement {
@@ -331,8 +343,8 @@ section h2 {
 }
 .bigActivite {
     border-radius: 30px;
-    max-width: 300px;
-    max-height: 600px;
+    max-width: 45%;
+    max-height: 90%;
     width: auto;
     height: auto;
     margin-right: 42px;
@@ -341,51 +353,57 @@ section h2 {
 .bigActivitePhoto {
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
-    height: 450px;
-    width: 300px;
+    height: 80%;
+    width: 100%;
+    min-height: 500px;
+    max-height: 600px;
     object-fit: cover;
+
+
 }
 .littleActivite {
     border-radius: 30px;
-    max-width: 300px;
-    max-height: 160px;
-    margin: 0 40px 130px 0;
+    width: 45%;
+    height: 40%;
+    min-height: 25%;
+    margin: 0 0 20% 0;
     box-shadow: 7px 10px 13px 4px #DEEBFF;
 }
 .littleActivitePhoto {
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
-    height: 120px;
-    width: 300px;
+    max-height: 150px;
+    max-width: 98%;
     object-fit: cover;
 
 }
 .nomActivite {
     font-weight: bold;
-    font-size: 15px;
+    font-size: 1.5rem;
     margin-top: -1px;
     margin-left: 5px
 }
 
 /*FOOTER*/
+
 footer {
    background-color: #F2F2F2;
    display: flex;
    flex-direction: row;
+   justify-content: space-between;
 }
 .footerLinkGroup{
     display: flex;
     flex-direction: column;
-    margin-right: 220px;
-
+    margin-right: 5%;
 }
 .footerLink {
     margin-bottom: 20px;
-    font-size: 15px;
+    font-size: 1.5rem;
 }
 footer h3 {
     margin: 50px 0 25px 40px ;
-    font-size: 20px;
+    font-size: 2rem;
     font-weight: bolder;
 }
 footer a:hover{
@@ -394,12 +412,11 @@ footer a:hover{
 
 
 /* Mise en page construction.html */
-#construction {
 
+#construction {
     background-color: #F2F2F2;
     width: 50%;
-    margin: 10% 40% 25% 25%;
-    
+    margin: 10% 40% 25% 25%;  
     text-align: center;
     border: 5px #DEEBFF solid;
     border-radius: 15px; 
@@ -412,4 +429,49 @@ footer a:hover{
 }
 #constLink:active{
     text-decoration: italic;
+}
+
+/*----- REGLES SPECIFIQUES RELATIVES AUX TABLETTES -----*/
+
+@media screen and (min-width: 375px) and (max-width: 959px) {
+
+}
+
+/*----- REGLES SPECIFIQUES RELATIVES AUX SMARTPHONES -----*/
+
+@media screen and (max-width : 375px) {
+    
+    /*HEADER*/
+    
+    #searchSubmitText {
+        display: none;
+    }
+    #inscription, #logo {
+        display:flex;
+        flex-direction: row;
+    }
+    
+    /*MAINSECTION*/
+
+    /*LOWERSECTION*/
+
+    /*FOOTER*/
+}
+
+/*----- REGLES SPECIFIQUES RELATIVES AUX ORDINATEURS -----*/
+
+@media screen and (min-width: 959px) {
+    
+    /*HEADER*/
+
+    #searchSubmitLogo {
+        display: none;
+    }
+
+    /*MAINSECTION*/
+
+    /*LOWERSECTION*/
+
+    /*FOOTER*/
+
 }
