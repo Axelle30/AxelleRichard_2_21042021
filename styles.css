@@ -14,8 +14,14 @@
 html {
     font-size: 11px;
 }
-:link {
+h2 {
+    font-weight: bolder;
+    font-size: 1.8rem;
+    margin-left: 15px;
+}
+a {
     text-decoration:none;
+    color: black;
 }
 a:visited {
 color: #0000;
@@ -56,15 +62,14 @@ em {
 }
 nav {
     display: flex;
-    margin-left: 650px;
-
+    margin-left: 500px;
+    margin-right: 150px;
 }
 .navElement {
     color: #0000;
     font-size: 2rem;
     margin-left: 30px;
     margin-right: 35px;
-    padding: 12;
 }
 nav a:hover {
     color:#0065FC;
@@ -75,10 +80,10 @@ nav a:hover {
     font-weight: bolder;
     color: #0065FC;
     margin-left: 30px;
-    margin-right: 35px;
+    margin-right: -140%;
 }
 #inscription:hover {
-    color: #0000;
+    color: #0065FC;
 }
 #search{
     display: flex;
@@ -205,11 +210,6 @@ nav a:hover {
     display:flex;
     flex-direction: row;
 }
-section h2 {
-    font-weight: bolder;
-    font-size: 1.8rem;
-    margin-left: 15px;
-}
 #marseille{
     background-color: #F2F2F2;
     border-radius: 30px;
@@ -317,7 +317,7 @@ section h2 {
 .notationHebergement {
     display: flex;
     flex-direction: row;
-    font-size: 12px;
+    font-size: 1.2rem;
     margin-bottom: 5px
 }
 #notationPanier {
@@ -343,6 +343,9 @@ section h2 {
 }
 .bigActivite {
     border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
     max-width: 45%;
     max-height: 90%;
     width: auto;
@@ -350,38 +353,58 @@ section h2 {
     margin-right: 42px;
     box-shadow: 7px 10px 13px 4px #DEEBFF;
 }
+.bigActivitePhotoContainer {
+    width: 98%;
+    height: 90%;
+    margin-left: 1%;
+
+}
 .bigActivitePhoto {
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
-    height: 80%;
+    height: 100%;
     width: 100%;
-    min-height: 500px;
-    max-height: 600px;
+    min-height: max-content;
     object-fit: cover;
-
-
 }
 .littleActivite {
     border-radius: 30px;
-    width: 45%;
+    width: 55%;
     height: 40%;
     min-height: 25%;
-    margin: 0 0 20% 0;
+    min-width: 45%;
+    margin: 0 0 10% 0;
     box-shadow: 7px 10px 13px 4px #DEEBFF;
+}
+.littleActivitePhotoContainer {
+    width: 98%;
+    height: 90%;
+    margin-left: 1%;
+
 }
 .littleActivitePhoto {
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
+    height: 80%;
+    width: 98%;
     max-height: 150px;
     max-width: 98%;
+    margin-left: 1%;
     object-fit: cover;
 
 }
-.nomActivite {
+.nomBigActivite {
     font-weight: bold;
     font-size: 1.5rem;
     margin-top: -1px;
-    margin-left: 5px
+    margin-left: 5px;                  
+}
+.nomLittleActivite {
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin-top: -20px;
+    margin-left: 15px;
+
 }
 
 /*FOOTER*/
@@ -389,6 +412,7 @@ section h2 {
 footer {
    background-color: #F2F2F2;
    display: flex;
+   width: 100%;
    flex-direction: row;
    justify-content: space-between;
 }
@@ -410,6 +434,218 @@ footer a:hover{
     color:#0065FC;
 }
 
+/*----- REGLES SPECIFIQUES RELATIVES AUX TABLETTES -----*/
+
+@media screen and (min-width: 376px) and (max-width: 768px) {
+ 
+    html {
+        font-size: 11px;
+    }
+
+    /*HEADER*/
+
+    #searchSubmitLogo {
+        display: none;
+    }
+    .filterCircle {
+        height: auto;
+        max-height: 100%;
+    }
+    .filterLogo {
+        font-size: 2.5rem;
+    }
+
+    /*MAIN SECTION*/
+
+    #mainSection {
+        display: flex;
+        flex-direction: column;
+    }
+    #marseille {
+        max-width: 100%;
+        width: auto;
+        margin: 0 0 5% 0;
+    }
+    #populaire {
+        width: 100%;
+        margin: 0 0 0 0;
+    }
+    .locationPopulaire {
+        margin: 5% 0 0 0;
+    }
+    
+    /*LOWER SECTION*/
+    #lowerSection {
+        margin-top: -500px;
+    } 
+    #activites {
+        display: flex;
+        flex-direction: column;
+    }
+    #leftActivites, #rightActivites {
+        display: flex;
+        flex-direction: column;
+    }
+    #leftColumn, #rightColumn {
+        display: flex;
+        flex-direction: row;
+    }
+    .bigActivite {
+        margin: 0 0 5% 25%;
+    }
+    .nomLittleActivite {
+        margin-top: 0px;
+    }
+
+}
+
+/*----- REGLES SPECIFIQUES RELATIVES AUX SMARTPHONES -----*/
+
+@media screen and (max-width : 375px) {
+    
+    /*HEADER*/
+
+    #logoNav {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        max-width: 375px;
+    }
+    #logo{
+        margin-right: -120px;
+    }
+    nav {
+        flex-wrap: wrap-reverse;
+        margin: 0 0 0 0;
+    }
+    #inscription {
+        margin: 23px 5px 0 0;
+    }
+    nav a:hover {
+        color:#0065FC;
+        border-bottom: 3px solid #0065FC ;
+        padding: 0 0 3px 0; 
+    }
+    #searchSubmitText {
+        display: none;
+    }
+    #searchSubmitLogo {
+        border: 2px solid #0065FC;
+        background-color: #0065FC;
+        color:#FFFF;
+        font-size: 1.5rem;
+        font-weight: bolder;
+        border-bottom-right-radius: 30px ;
+        border-top-right-radius: 30px;
+        height: 56px;
+        width: 50px;
+        margin-left: -4px;
+    }
+    #inscription, #logo {
+        display:flex;
+        flex-direction: row;
+    }
+    #filter {
+        flex-wrap: wrap;
+    }
+    .filterBlock {
+        min-width: 50%;
+        width: auto;
+    }
+    #animauxAutorises {
+        min-width: 70%;
+    }
+    #filterTitle {
+        font-size: 2rem;
+    }
+    
+    /*MAINSECTION*/
+
+    #mainSection {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-bottom: 0;
+    }
+    #populaire {
+        display: flex;
+        max-width: 100%;
+        width: auto;
+        
+    }
+    #populaireLogo {
+        padding: 3% 5% 0 0;
+    }
+    #marseille {
+        background-color: #FFFF;
+        flex-direction: column;
+    }
+    #firstLine {
+        flex-direction: column;
+    }
+    #secondLine {
+        flex-direction: column;
+    }
+    .locationMarseille {
+        width: 330px;
+        max-width: 330px;
+        margin-left: 6px;
+    }
+    #affplus {
+        margin-top: 520px;
+    }
+
+    /*LOWER SECTION*/
+
+    #lowerSection {
+        margin-top: -50px;
+    }
+    #activites {
+        flex-direction: column;
+    }
+    #leftActivites, #rightActivites {
+        flex-direction: column;
+    }
+    #leftColumn, #rightColumn {
+        flex-direction: column;
+    }
+    .bigActivite, .littleActivite {
+        width: 330px;
+        max-width: 330px;
+        max-height: 200px;
+        margin-bottom: 20px;
+        margin-left: 10px;
+    }
+    .bigActivitePhoto {
+        max-height: 160px;
+    }
+    .nomLittleActivite {
+        margin-top: 0;
+    }
+
+    /*FOOTER*/
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/*----- REGLES SPECIFIQUES RELATIVES AUX ORDINATEURS -----*/
+
+@media screen and (min-width: 769px) {
+    
+    /*HEADER*/
+
+    #searchSubmitLogo {
+        display: none;
+    }
+
+    /*MAINSECTION*/
+
+    /*LOWERSECTION*/
+
+    /*FOOTER*/
+
+}
 
 /* Mise en page construction.html */
 
@@ -426,52 +662,4 @@ footer a:hover{
 }
 #constLink:hover {
     color: #0065FC;
-}
-#constLink:active{
-    text-decoration: italic;
-}
-
-/*----- REGLES SPECIFIQUES RELATIVES AUX TABLETTES -----*/
-
-@media screen and (min-width: 375px) and (max-width: 959px) {
-
-}
-
-/*----- REGLES SPECIFIQUES RELATIVES AUX SMARTPHONES -----*/
-
-@media screen and (max-width : 375px) {
-    
-    /*HEADER*/
-    
-    #searchSubmitText {
-        display: none;
-    }
-    #inscription, #logo {
-        display:flex;
-        flex-direction: row;
-    }
-    
-    /*MAINSECTION*/
-
-    /*LOWERSECTION*/
-
-    /*FOOTER*/
-}
-
-/*----- REGLES SPECIFIQUES RELATIVES AUX ORDINATEURS -----*/
-
-@media screen and (min-width: 959px) {
-    
-    /*HEADER*/
-
-    #searchSubmitLogo {
-        display: none;
-    }
-
-    /*MAINSECTION*/
-
-    /*LOWERSECTION*/
-
-    /*FOOTER*/
-
 }

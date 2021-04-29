@@ -2,6 +2,7 @@
 <html lang="fr">
     <head>
         <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Reservia - Trouvez votre hébérgement pour des vacances de rêves</title>
         <link rel="stylesheet" href="styles.css" />
         <script src="https://kit.fontawesome.com/e4743f0c56.js" crossorigin="anonymous"></script>
@@ -11,11 +12,12 @@
         <header>
             <div id="logoNav">
                 <p id="logo"><img src="images/logo/reservia.svg" alt="Reservia"/></p>
+                <p class="navElement" id="inscription"><a href="construction.html">  S'inscrire</a></p>
                 <nav>
                     <p class="navElement"><a href="#mainSection">Hébérgement</a></p>
                     <p class="navElement"><a href="#lowerSection">  Activités</a></p>
-                    <p class="navElement" id="inscription"><a href="construction.html">  S'inscrire</a></p>
                 </nav>
+                
             </div>
             <h1 id="mainTitle">Trouvez votre hébérgement pour des vacances de rêves</h1>
             <h4 id="mainSubTitle">En plein centre ville ou en pleine nature</h4>
@@ -25,7 +27,7 @@
                 </div>
                 <form method="POST" action="temp.php">
                     <input type=text value="   Marseille, France" id="searchInput"/>
-                    <i class="fas fa-search" id="searchSubmitLogo"><input type="submit" id="" value=""/></i>
+                    <button id="searchSubmitLogo"><i class="fas fa-search"></i></button>
                     <input type="submit" id="searchSubmitText" value="Rechercher" />
                     
                 </form>
@@ -50,7 +52,7 @@
                     </div>
                         <p class="filterElement">Romantique</p>
                 </div>
-                <div class="filterBlock">
+                <div class="filterBlock" id="animauxAutorises">
                     <div class="filterCircle">    
                         <div class="filterLogo" id="dog"><i class="fas fa-dog"></i></div>
                     </div>    
@@ -201,33 +203,33 @@
             <div id="activites">    
                 <div id=leftActivites>
                     <article class="bigActivite" id="vieuxPort">
-                        <div><img class="bigActivitePhoto" src="images/activites/4_small/vieux_port.jpg" alt="Vieux Port"/></div>
-                        <h6 class=nomActivite>Vieux Port</h6>
+                        <div class="bigActivitePhotoContainer"><img class="bigActivitePhoto" src="images/activites/4_small/vieux_port.jpg" alt="Vieux Port"/></div>
+                        <h6 class=nomBigActivite>Vieux Port</h6>
                     </article>
                     <div id="leftColumn">
                         <article class="littleActivite" id="pomegue">
-                            <div><img class="littleActivitePhoto" src="images/activites/4_small/fort_de_pomegues.jpg" alt="Fort de Pomègues" /></div>
-                            <h6 class=nomActivite>Fort de Pomègues</h6>
+                            <div class="littleActivitePhotoContainer"><img class="littleActivitePhoto" src="images/activites/4_small/fort_de_pomegues.jpg" alt="Fort de Pomègues" /></div>
+                            <h6 class=nomLittleActivite>Fort de Pomègues</h6>
                         </article>
                         <article class="littleActivite" id="frioul">
-                            <div><img class="littleActivitePhoto" src="images/activites/4_small/iles_du_frioul.jpg" alt="Îles du Frioul" /></div>
-                            <h6 class=nomActivite>Îles du Frioul</h6>
+                            <div class="littleActivitePhotoContainer"><img class="littleActivitePhoto" src="images/activites/4_small/iles_du_frioul.jpg" alt="Îles du Frioul" /></div>
+                            <h6 class=nomLittleActivite>Îles du Frioul</h6>
                         </article>
                     </div>
                     </div>
                     <div id="rightActivites">
                     <article class="bigActivite" id="calanques">
-                        <div><img class="bigActivitePhoto" src="images/activites/4_small/parc_national_des_calanques.jpg" alt="Parc National des Calanques" /></div>
-                        <h6 class=nomActivite>Parc National des Calanques</h6>
+                        <div class="bigActivitePhotoContainer"><img class="bigActivitePhoto" src="images/activites/4_small/parc_national_des_calanques.jpg" alt="Parc National des Calanques" /></div>
+                        <h6 class=nomBigActivite>Parc National des Calanques</h6>
                     </article>
                     <div id="rightColumn">    
                         <article class="littleActivite" id="notreDame">
-                            <div><img class="littleActivitePhoto" src="images/activites/4_small/notre_dame_de_la_garde.jpg" alt="Notre Dame de la Garde" /></div>
-                            <h6 class=nomActivite>Notre-Dame-de-la-Garde</h6>
+                            <div class="littleActivitePhotoContainer"><img class="littleActivitePhoto" src="images/activites/4_small/notre_dame_de_la_garde.jpg" alt="Notre Dame de la Garde" /></div>
+                            <h6 class=nomLittleActivite>Notre-Dame-de-la-Garde</h6>
                         </article>
                         <article class="littleActivite" id="longchamp">
-                            <div><img class="littleActivitePhoto" src="images/activites/4_small/parc_longchamp.jpg" alt="Parc Longchamp" /></div>
-                            <h6 class=nomActivite>Parc Longchamp</h6>
+                            <div class="littleActivitePhotoContainer"><img class="littleActivitePhoto" src="images/activites/4_small/parc_longchamp.jpg" alt="Parc Longchamp" /></div>
+                            <h6 class=nomLittleActivite>Parc Longchamp</h6>
                         </article>
                     </div>    
                 </div>
