@@ -62,14 +62,14 @@ em {
 }
 nav {
     display: flex;
-    margin-left: 500px;
+    margin-left: 70%;
     margin-right: 150px;
 }
 .navElement {
     color: #0000;
     font-size: 2rem;
-    margin-left: 30px;
-    margin-right: 35px;
+    margin-left: 5px;
+    margin-right: 50px;
 }
 nav a:hover {
     color:#0065FC;
@@ -79,8 +79,6 @@ nav a:hover {
 #inscription {
     font-weight: bolder;
     color: #0065FC;
-    margin-left: 30px;
-    margin-right: -140%;
 }
 #inscription:hover {
     color: #0065FC;
@@ -243,7 +241,7 @@ nav a:hover {
     border-radius: 30px;
     padding: 5px 5px 5px 5px;
     margin: 30px 30px 30px 30px;
-    box-shadow: 7px 10px 13px 4px #DEEBFF;
+    box-shadow: 7px 10px 13px 4px #BBB6B5;
 }
 .nomHebergement,.prixHebergement,.notationHebergement {
     margin-left: 7px;
@@ -290,7 +288,7 @@ nav a:hover {
     height: 40%;
     width: auto;
     margin: 0 0 15% 5%;
-    box-shadow: 7px 10px 13px 4px #DEEBFF;
+    box-shadow: 7px 10px 13px 4px #BBB6B5;
 }
 .photoPopulaire {
     border-top-left-radius: 30px;
@@ -351,7 +349,7 @@ nav a:hover {
     width: auto;
     height: auto;
     margin-right: 42px;
-    box-shadow: 7px 10px 13px 4px #DEEBFF;
+    box-shadow: 7px 10px 13px 4px #BBB6B5;
 }
 .bigActivitePhotoContainer {
     width: 98%;
@@ -374,7 +372,7 @@ nav a:hover {
     min-height: 25%;
     min-width: 45%;
     margin: 0 0 10% 0;
-    box-shadow: 7px 10px 13px 4px #DEEBFF;
+    box-shadow: 7px 10px 13px 4px #BBB6B5;
 }
 .littleActivitePhotoContainer {
     width: 98%;
@@ -436,14 +434,28 @@ footer a:hover{
 
 /*----- REGLES SPECIFIQUES RELATIVES AUX TABLETTES -----*/
 
-@media screen and (min-width: 376px) and (max-width: 768px) {
+@media screen and (min-width: 500px) and (max-width: 768px) {
  
     html {
         font-size: 11px;
     }
 
     /*HEADER*/
-
+    #logoNav {
+        justify-content: space-between;
+    }
+    nav {
+        display: flex;
+        margin-left: 50%;
+        margin-right: 10%;
+    }
+    #logo {
+        margin-left: 5px;
+    }
+    #inscription {
+        margin-left: 10%;
+        margin-right: -180%;
+    }
     #searchSubmitLogo {
         display: none;
     }
@@ -475,9 +487,7 @@ footer a:hover{
     }
     
     /*LOWER SECTION*/
-    #lowerSection {
-        margin-top: -500px;
-    } 
+
     #activites {
         display: flex;
         flex-direction: column;
@@ -501,7 +511,7 @@ footer a:hover{
 
 /*----- REGLES SPECIFIQUES RELATIVES AUX SMARTPHONES -----*/
 
-@media screen and (max-width : 375px) {
+@media screen and (max-width : 499px) {
     
     /*HEADER*/
 
@@ -509,14 +519,14 @@ footer a:hover{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        max-width: 375px;
+        max-width: 425px;
     }
     #logo{
-        margin-right: -120px;
+        margin-right: 15px;
     }
     nav {
         flex-wrap: wrap-reverse;
-        margin: 0 0 0 0;
+        margin: 0 -100px 0 0;
     }
     #inscription {
         margin: 23px 5px 0 0;
@@ -539,7 +549,7 @@ footer a:hover{
         border-top-right-radius: 30px;
         height: 56px;
         width: 50px;
-        margin-left: -4px;
+        margin-left: -15%;
     }
     #inscription, #logo {
         display:flex;
@@ -626,6 +636,7 @@ footer a:hover{
     footer {
         display: flex;
         flex-direction: column;
+        margin-left: 5%;
     }
 }
 
@@ -635,6 +646,10 @@ footer a:hover{
     
     /*HEADER*/
 
+    #inscription {
+        margin-left: 30px;
+        margin-right: -180%;
+    }
     #searchSubmitLogo {
         display: none;
     }
@@ -646,6 +661,8 @@ footer a:hover{
     /*FOOTER*/
 
 }
+/*----- REGLE SPECIFIQUE NAV ECRAN TAILLE INTERMEDIAIRE -----*/
+
 
 /* Mise en page construction.html */
 
