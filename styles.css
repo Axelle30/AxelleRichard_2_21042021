@@ -35,9 +35,11 @@ h1 {
 }
 .blueStar {
     color: #0065FC;
+    font-size: 1.2rem;
 }
 .whiteStar {
     color: #DEEBFF;
+    font-size: 1.2rem;
 }
 em {
     font-weight: bold;
@@ -50,11 +52,16 @@ em {
 #mainSubTitle {
     font-size: 1.5rem;
     margin-top: -5px;
+    margin-left: 9px;
     font-weight: lighter;
 }
 #mainTitle {
     font-weight: bolder;
     font-size: 2rem;
+    margin-left: 7px;
+}
+#logo {
+    margin-left: 2px;
 }
 #logoNav {
     display: flex;
@@ -71,33 +78,32 @@ nav {
     margin-left: 5px;
     margin-right: 50px;
 }
-nav a:hover {
+#hebergementsLink a {
     color:#0065FC;
     border-top: 3px solid #0065FC ;
-    padding: 22px 0 0 0; 
+    padding: 27px 0 0 0; 
 }
-#inscription {
+#inscription a {
     font-weight: bolder;
-    color: #0065FC;
-}
-#inscription:hover {
     color: #0065FC;
 }
 #search{
     display: flex;
     justify-content: left;
+    margin-left: 7px;
 }
 #searchLogoCircle {
+    margin-top: 1px;
     border: 2px solid #F2F2F2;
     background-color: #F2F2F2;
-    border-top-left-radius: 30px;
-    border-bottom-left-radius: 30px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
     width: 50px;
     height: 52px;
 }
 #searchLogoPointer {
-    font-size: 3rem;
-    padding: 7px 0 0 17px;
+    font-size: 2rem;
+    padding: 12px 0 0 20px;
 }
 #searchInput{
     border: 2px solid #F2F2F2;
@@ -113,8 +119,8 @@ nav a:hover {
     color:#FFFF;
     font-size: 1.5rem;
     font-weight: bolder;
-    border-bottom-right-radius: 30px ;
-    border-top-right-radius: 30px;
+    border-bottom-right-radius: 20px ;
+    border-top-right-radius: 20px;
     height: 56px;
     width: 135px;
     margin-left: -4px;
@@ -129,11 +135,11 @@ nav a:hover {
 #filter {
     display: flex;
     flex-direction: row;
-    margin: 30px 0 20px 0;
+    margin: 30px  20px 0;
 }
 #filterTitle{
-    margin: 30px 0 0 0;
-    padding: 0 0 0 0;
+    margin: 35px 4px 0 0;
+    font-size: 1.4rem;
 }
 .filterBlock {
     display: flex;
@@ -142,7 +148,7 @@ nav a:hover {
     font-weight: bolder;
     border: 2px solid #F2F2F2;
     width: auto;
-    max-width: 20%;
+    max-width: 25%;
     height: 2%;
     border-radius: 30px;
     justify-content: left;
@@ -168,8 +174,20 @@ nav a:hover {
     vertical-align: center;
     text-align: center;
     margin-top: 8px;
-    font-size: 3rem;
+    font-size: 2rem;
 }
+#money {
+    margin: 10px 2px 0 0;
+}
+
+#child {
+    margin: 12px 2px 0 0;
+}
+
+#heart {
+    margin: 12px 0px 0 0;
+}
+
 .filterBlock:hover{
     background-color: #0065FC;
     color: #F2F2F2;
@@ -180,7 +198,7 @@ nav a:hover {
 #info {
     display: flex;
     flex-direction: row;
-    margin: 0 0 30px 0;
+    margin: 0 27px 30px 0;
      
 }
 #infobulle {
@@ -194,7 +212,7 @@ nav a:hover {
     width:20px;
     height: 20px;
     text-align: center;
-    margin: 15px 5px 0 0;
+    margin: 18px 5px 0 7px;
     
 }
 #info h4 {
@@ -207,15 +225,16 @@ nav a:hover {
 #mainSection{
     display:flex;
     flex-direction: row;
+    margin-left: 7px;
 }
 #marseille{
     background-color: #F2F2F2;
-    border-radius: 30px;
+    border-radius: 20px;
     display: flex;
     flex-direction: column;
-    max-width:60%;
-    max-height: 33%;
-    margin-right: 13%;
+    max-width:67%;
+    max-height: 38%;
+    margin-right: 3%;
 }
 #firstLine{
     display:flex;
@@ -234,14 +253,14 @@ nav a:hover {
 }
 .locationMarseille {
     background-color: #FFFF;
-    width: auto;
-    max-width: 25%;
-    height: auto;
-    max-height: 17%;
-    border-radius: 30px;
+    width: 35%;
+    max-width: 30%;
+    height: 30%;
+    max-height: 25%;
+    border-radius: 20px;
     padding: 5px 5px 5px 5px;
     margin: 30px 30px 30px 30px;
-    box-shadow: 7px 10px 13px 4px #BBB6B5;
+    box-shadow: 6px 8px 13px 1px #D5D5D5;
 }
 .nomHebergement,.prixHebergement,.notationHebergement {
     margin-left: 7px;
@@ -254,18 +273,18 @@ nav a:hover {
     max-width: 98%;
     width: 100%;
     max-height: 115px;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
     padding-left: 3px;
     object-fit: cover;
 }
 #populaire{
     background-color: #F2F2F2;
-    border-radius: 30px;
+    border-radius: 20px;
     display: flex;
     flex-direction: column;
-    width: 27%;
-    max-height: 35%;
+    width: 30%;
+    max-height: 38%;
     margin: 0 0 0 4px;
     padding: 0 0 0 8px;
 }
@@ -273,6 +292,7 @@ nav a:hover {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin: 2% 0 2% 0;
 }
 #populaireLogo {
     font-size: 2.5rem;
@@ -282,22 +302,26 @@ nav a:hover {
 .locationPopulaire{
     display: flex;
     background-color: #FFFF;
-    border-radius: 30px;
+    border-radius: 20px;
     max-width: 90%;
-    max-height: 40%;
-    height: 40%;
+    max-height: 30%;
+    min-height: 25%;
+    height: auto;
     width: auto;
-    margin: 0 0 15% 5%;
-    box-shadow: 7px 10px 13px 4px #BBB6B5;
+    margin: 0 5% 5% 5%;
+    box-shadow: 6px 8px 13px 1px #D5D5D5;
+}
+.photoPopulaireContainer {
+    margin: 0 1% 0 1%;
 }
 .photoPopulaire {
-    border-top-left-radius: 30px;
-    border-bottom-left-radius: 30px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
     object-fit: cover;
     width: 100%;
-    height: 98%;
-    max-width: 140px;
-    max-height: 126px;
+    height: 100%;
+    max-width: 250px;
+    max-height: 160px;
     margin-bottom: -2%;
 }
 .descriptionLocationPopulaire {
@@ -305,11 +329,11 @@ nav a:hover {
 }
 .nomHebergement {
     font-weight: bolder;
-    font-size: 1.3rem;
-    margin-top: -4px;
+    font-size: 1.5rem;
+    margin-top: 0px;
 }
 .prixHebergement {
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin-top: -20px;
 }
 .notationHebergement {
@@ -326,6 +350,7 @@ nav a:hover {
 
 #lowerSection {
     padding-top:70px;
+    margin-left: 8px;
 }
 #activites {
     display: flex;
@@ -340,7 +365,7 @@ nav a:hover {
     flex-direction: column;
 }
 .bigActivite {
-    border-radius: 30px;
+    border-radius: 20px;
     display: flex;
     flex-direction: column;
     align-items: stretch;
@@ -349,7 +374,7 @@ nav a:hover {
     width: auto;
     height: auto;
     margin-right: 42px;
-    box-shadow: 7px 10px 13px 4px #BBB6B5;
+    box-shadow: 6px 8px 13px 1px #F2F2F2;
 }
 .bigActivitePhotoContainer {
     width: 98%;
@@ -358,21 +383,21 @@ nav a:hover {
 
 }
 .bigActivitePhoto {
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
     height: 100%;
     width: 100%;
     min-height: max-content;
     object-fit: cover;
 }
 .littleActivite {
-    border-radius: 30px;
+    border-radius: 20px;
     width: 55%;
     height: 40%;
     min-height: 25%;
-    min-width: 45%;
+    min-width: 90%;
     margin: 0 0 10% 0;
-    box-shadow: 7px 10px 13px 4px #BBB6B5;
+    box-shadow: 6px 8px 13px 1px #F2F2F2;
 }
 .littleActivitePhotoContainer {
     width: 98%;
@@ -381,8 +406,8 @@ nav a:hover {
 
 }
 .littleActivitePhoto {
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
     height: 80%;
     width: 98%;
     max-height: 150px;
@@ -394,14 +419,14 @@ nav a:hover {
 .nomBigActivite {
     font-weight: bold;
     font-size: 1.5rem;
-    margin-top: -1px;
-    margin-left: 5px;                  
+    margin-top: 15px;
+    margin-left: 15px;                  
 }
 .nomLittleActivite {
     font-weight: bold;
     font-size: 1.3rem;
     margin-top: -20px;
-    margin-left: 15px;
+    margin-left: 25px;
 
 }
 
@@ -446,25 +471,36 @@ footer a:hover{
     }
     nav {
         display: flex;
-        margin-left: 50%;
-        margin-right: 10%;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+    .navElement {
+        margin-left: 5px;
+        margin-right: 20px;
     }
     #logo {
         margin-left: 5px;
     }
     #inscription {
-        margin-left: 10%;
-        margin-right: -180%;
+        margin-left: 0;
+        margin-right: -139%;
     }
     #searchSubmitLogo {
         display: none;
     }
     .filterCircle {
-        height: auto;
-        max-height: 100%;
+        min-width: 50px;
+        min-height: 50px;
     }
     .filterLogo {
-        font-size: 2.5rem;
+        padding-top: 3px;
+        font-size: 2rem;
+    }
+    #child {
+        padding-top: 0;
+    }
+    .filterElementAnimaux {
+        font-size: 1.2rem;
     }
 
     /*MAIN SECTION*/
@@ -472,18 +508,27 @@ footer a:hover{
     #mainSection {
         display: flex;
         flex-direction: column;
+        margin-right: 1%;
     }
     #marseille {
         max-width: 100%;
-        width: auto;
+        
         margin: 0 0 5% 0;
     }
     #populaire {
+        max-width: 100%;
         width: 100%;
+        max-height: 45%;
+        height: auto;
         margin: 0 0 0 0;
     }
-    .locationPopulaire {
-        margin: 5% 0 0 0;
+    .locationPopulaire{
+        max-width: 90%;
+        max-height: 20%;
+        min-height: 15%;
+        height: auto;
+        width: auto;
+        margin: 0 5% 5% 5%;
     }
     
     /*LOWER SECTION*/
@@ -495,16 +540,45 @@ footer a:hover{
     #leftActivites, #rightActivites {
         display: flex;
         flex-direction: column;
+        margin-right: 2%;
     }
     #leftColumn, #rightColumn {
         display: flex;
-        flex-direction: row;
-    }
-    .bigActivite {
-        margin: 0 0 5% 25%;
+        flex-direction: column;
     }
     .nomLittleActivite {
         margin-top: 0px;
+    }
+    .littleActivite {
+        margin: 0 3% 5% 4%;
+    }
+    .littleActivitePhoto {
+        margin-left: 2.5%;
+    }
+    .bigActivite {
+        border-radius: 20px;
+        width: 55%;
+        height: 40%;
+        min-height: 25%;
+        min-width: 90%;
+        margin: 0 5% 5% 5%;
+    }
+    .bigActivitePhotoContainer {
+        width: 98%;
+        height: 90%;
+        margin-left: 1%;
+    
+    }
+    .bigActivitePhoto {
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        height: 80%;
+        width: 98%;
+        max-height: 150px;
+        max-width: 98%;
+        margin-left: 2.5%;
+        object-fit: cover;
+    
     }
 
 }
@@ -525,16 +599,27 @@ footer a:hover{
         margin-right: 15px;
     }
     nav {
-        flex-wrap: wrap-reverse;
-        margin: 0 -100px 0 0;
+        flex-wrap: row;
+        margin: 0 0 0 0;
+    }
+    .navElement {
+        font-size: 1.6rem;
     }
     #inscription {
-        margin: 23px 5px 0 0;
+        margin: 23px 15px 0 0;
     }
-    nav a:hover {
-        color:#0065FC;
-        border-bottom: 3px solid #0065FC ;
-        padding: 0 0 3px 0; 
+    #hebergementsLink a {
+        border-top-color: #FFFF;
+        border-bottom: 3px solid #0065FC;
+        margin: 0 0 0 -20px;
+        padding:0 40px 20px 60px;
+        
+    }
+    #activitesLink a {
+        border-bottom: 3px solid #F2F2F2;
+        margin: 0 0 0 -55px;
+        padding: 0 60px 20px 100px;
+    
     }
     #searchSubmitText {
         display: none;
@@ -545,8 +630,8 @@ footer a:hover{
         color:#FFFF;
         font-size: 1.5rem;
         font-weight: bolder;
-        border-bottom-right-radius: 30px ;
-        border-top-right-radius: 30px;
+        
+        border-radius: 20px;
         height: 56px;
         width: 50px;
         margin-left: -15%;
@@ -558,15 +643,35 @@ footer a:hover{
     #filter {
         flex-wrap: wrap;
     }
+    #filter h3 {
+        font-size: 1.6rem;
+        margin-right: 50%;
+    }
     .filterBlock {
-        min-width: 50%;
+        min-width: fit-content;
+        min-height: fit-content;
         width: auto;
+        height: auto;
+         
     }
     #animauxAutorises {
         min-width: 70%;
     }
-    #filterTitle {
+    .filterCircle {
+        min-width: 50px;
+        min-height: 100%;
+        max-height: 100%;
+        max-width: 50px;
+    }
+    .filterLogo {
+        padding-top: 3px;
         font-size: 2rem;
+    }
+    #child {
+        padding-top: 0;
+    }
+    .filterElement {
+        font-size: 1.5rem;
     }
     
     /*MAINSECTION*/
@@ -574,13 +679,35 @@ footer a:hover{
     #mainSection {
         display: flex;
         flex-direction: column-reverse;
-        margin-bottom: 0;
+        margin-bottom: 2%;
     }
     #populaire {
-        display: flex;
         max-width: 100%;
+        width: 100%;
+        max-height: 45%;
+        height: auto;
+        margin: 0 5% 0 -1%;
+    }
+    .locationPopulaire{
+        max-width: 90%;
+        max-height: 17%;
+        min-height: 15%;
+        height: auto;
         width: auto;
-        
+        margin: 0 5% 5% 5%;
+    }
+    .photoPopulaireContainer {
+        margin: 0 1% 0 1%;
+    }
+    .photoPopulaire {
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        max-width: 190px;
+        max-height: 140px;
+        margin-bottom: -2%;
     }
     #populaireLogo {
         padding: 3% 5% 0 0;
@@ -588,6 +715,7 @@ footer a:hover{
     #marseille {
         background-color: #FFFF;
         flex-direction: column;
+        margin-top: 5%;
     }
     #firstLine {
         flex-direction: column;
@@ -596,9 +724,9 @@ footer a:hover{
         flex-direction: column;
     }
     .locationMarseille {
-        width: 330px;
-        max-width: 330px;
-        margin-left: 6px;
+        width: 450px;
+        max-width: 400px;
+        margin:0 0 5% 1%;
     }
     #affplus {
         margin-top: 520px;
@@ -619,8 +747,8 @@ footer a:hover{
         flex-direction: column;
     }
     .bigActivite, .littleActivite {
-        width: 330px;
-        max-width: 330px;
+        width: 450px;
+        max-width: 400px;
         max-height: 200px;
         margin-bottom: 20px;
         margin-left: 10px;
@@ -630,13 +758,14 @@ footer a:hover{
     }
     .nomLittleActivite {
         margin-top: 0;
+        font-size: 1.5rem;
     }
 
     /*FOOTER*/
     footer {
         display: flex;
         flex-direction: column;
-        margin-left: 5%;
+        margin-left: 1%;
     }
 }
 
